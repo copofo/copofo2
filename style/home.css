@@ -1,0 +1,74 @@
+body{
+  height: 100vh;
+}
+
+#logout{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 3em;
+    border: none;
+}
+
+
+
+
+footer div.recarregar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  width: 50%;
+}
+
+#recarregar{
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 3em;
+}
+
+footer div.logout{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  text-align: right;
+}
+
+section{
+  height: 100%;
+}
+
+ol{
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+  height: 100%;
+  margin-top: 3em;;
+}
+
+p{
+  margin: 0.5em 0;
+}
+
+ol li{
+  cursor: pointer;
+  background-color: white;
+  padding: 0.5em 1em;
+  border: 0.1em solid var(--corE);
+}
+
+ol li:hover{
+  opacity: 0.8;
+}
+
+ol li.entry{
+  border-left: 1.5em solid red;
+}
+
+/*ol li.exit{
+  border-left: 1.5em solid green;
+}*/
+
+ol li.income{
+  border-left: 1.5em solid blue;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--teste-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/index.css">
+  <title>Entregas</title>
+</head>
+
+<body class="centralize">
+  <h1>Controle de Encomendas</h1>
+  <h2>TrioHome</h2>
+  <form>
+
+
+    <div>
+      <div>
+        <label for="">E-mail</label>
+      </div>
+      <input type="text" name="nome" id="nome" value="" placeholder="seu@email.com" onchange="teste()"/>
+    </div>
+    
+    <div>
+
+      <div>
+        <label for="">Senha</label>
+      </div>
+      <input type="password" name="senha" id="senha" value="" placeholder="Senha"/>
+    </div>
+
+    <div>
+      <button type="button" id="btnEntrar" onclick="start()" disabled="true">Entrar</button>
+    </div>
+  </form>
+
+  
+
+
+  <footer><p id="copy">&copy; Telles Jr</p></footer>
+
+
+  <script src="src/index.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+  <script src="src/firebaseConfig.js"></script>
+  <script src="src/loading.js"></script>
+  <script src="src/validateFields.js"></script>
+  
+  <script>
+      firebase.auth().onAuthStateChanged(function(user){
+        if(user){
+          window.location.href = "pg/home.html"
+        }
+      })
+  </script>
+</body>
+
+</html>
